@@ -11,7 +11,7 @@ manufacture replacement parts (by CNC milling, 3D printing, molding, ...).
 ## Classes
 Any part found in this repository falls into one of these three classes:
 * Faithful reproduction of the original
-* Adaption (for example, changed to be 3D-printable)
+* Adaptation (for example, changed to be 3D-printable)
 * Custom (For example, an alternate styling of a power button)
 
 Please keep in mind that there are many ways to manufacture the part, and that a faithful representation
@@ -28,9 +28,9 @@ Example of an acceptable name with a part number prefix:
 `gbc/38884-button.A`
 
 If you adapt an existing original part, for example by making it suitable for 3D printing, use the same name and add a suffix that
-describes your adaption.
+describes your adaptation.
 
-Example of an acceptable adaption name:
+Example of an acceptable adaptation name:
 `gbc/38884-button.A-3dp`
 
 ## Licensing
@@ -62,6 +62,6 @@ information about the part. The following fields are mandatory:
 | system | The game system this part applies to | `"system" : "psx"` |
 | fits   | A list of specific model numbers of devices where this exact part is used. This could be a console main unit, a controller, an accessory, ... | `"fits" : [ "scph-1002", "scph-5000" ]` |
 | license | The license of the part, which specifies how it may be reused. | `"license" : "cc-by-sa-4.0"` |
-| class  | The class (see above) of the part. This is either `"original"`, `"adaption"` or `"custom"`. | `"class" : "adaption" |
-| description | A free-text description of the part. If it is an adaption, explain here. If there are any caveats, explain here. | `"description" : "Power button adapted for 3D-printing by hollowing out and adding struts." |
+| class  | The class (see above) of the part. This is either `"original"`, `"adaptation"` or `"custom"`. | `"class" : "adaptation"` |
+| description | A free-text description of the part. If it is an adaptation, explain here. If there are any caveats, explain here. | `"description" : "Power button adapted for 3D-printing by hollowing out and adding struts."` |
 
