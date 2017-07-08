@@ -5,8 +5,19 @@ The purpose of this project is to measure, model and archive the plastic and
 metal parts that make up old game consoles. These drawings can then be used to
 manufacture replacement parts (by CNC milling, 3D printing, molding, ...).
 
+In some cases, models of electronic parts (circuit boards, displays, ...) are also provided, as a tool
+for people designing custom cases. For these components, the focus is to locate mounting points (screw holes, etc)
+and other external features (button contacts, display frames, protruding components, ...) rather than a 100%
+accurate model of the part.
+
 
 # Guidelines
+
+## Directory structure
+The directory structure of the repository has a depth of 3:
+1. Friendly system name, such as "psx"
+2. Friendly device name, such as "console" or "dual-shock"
+3. Part name (see *Naming* below)
 
 ## Classes
 Any part found in this repository falls into one of these three classes:
@@ -24,14 +35,14 @@ If official manufacturer parts numbers are known (for example, from a service ma
 be added as a prefix. If multiple revisions of the same part exist (for different releases of the same console, for example),
 they should be given a suffix "-rev05" with an order that makes sense (for example the order in which the consoles were released).
 
-Example of an acceptable name with a part number prefix:
-`gbc/38884-button.A`
+Example of a good name with a part number prefix:
+`gbc/console/38884-button.A`
 
 If you adapt an existing original part, for example by making it suitable for 3D printing, use the same name and add a suffix that
 describes your adaptation.
 
-Example of an acceptable adaptation name:
-`gbc/38884-button.A-3dp`
+Example of a good adaptation name:
+`gbc/console/38884-button.A-3dp`
 
 ## Licensing
 Any parts you submit must either be your own work or work
@@ -59,6 +70,7 @@ information about the part. The following fields are mandatory:
 
 | Field  | Description | Example |
 |-------:|:------------|:---------|
+| author | A name or alias for the person who contributed the original drawing. | `"author" : "jimmy_p"` |
 | system | The game system this part applies to | `"system" : "psx"` |
 | fits   | A list of specific model numbers of devices where this exact part is used. This could be a console main unit, a controller, an accessory, ... | `"fits" : [ "scph-1002", "scph-5000" ]` |
 | license | The license of the part, which specifies how it may be reused. | `"license" : "cc-by-sa-4.0"` |
