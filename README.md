@@ -53,7 +53,7 @@ Example of a good adaptation name:
 ## Licensing
 Any parts you submit must either be your own work or work
 that you have permission to submit. Parts must be released
-under an Open-source license of your choice (Recommended: [CC-by-sa 4.0](https://creativecommons.org/licenses/by-sa/4.0/))
+under an Open-source license of your choice (Recommended: [CC by-sa 4.0](https://creativecommons.org/licenses/by-sa/4.0/))
 
 ## Trademarks and logos
 If the part you are designing is an external part (an outer case for example),
