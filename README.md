@@ -19,6 +19,12 @@ The directory structure of the repository has a depth of 3:
 2. Friendly device name, such as "console" or "dual-shock"
 3. Part name (see *Naming* below)
 
+Each part's directory contains at least the `metadata.json` file and a `src/` directory
+with the CAD drawings in some portable format (Recommended: STEP)
+
+Don't include the model exported to any non-editable format such as STL, there will eventually be automatic export
+from submitted drawing sources.
+
 ## Classes
 Any part found in this repository falls into one of these three classes:
 * Faithful reproduction of the original
@@ -27,13 +33,13 @@ Any part found in this repository falls into one of these three classes:
 
 Please keep in mind that there are many ways to manufacture the part, and that a faithful representation
 of the original is the best starting point. If a part does not exist in the library, please add the original
-first and then adapt it for specific users (e.g. molding)
+first and then adapt it for specific users (e.g. molding).
 
 ## Naming
 The directory containing a part should be named in a descriptive and (if possible) short manner.
 If official manufacturer parts numbers are known (for example, from a service manual), these should
 be added as a prefix. If multiple revisions of the same part exist (for different releases of the same console, for example),
-they should be given a suffix "-rev05" with an order that makes sense (for example the order in which the consoles were released).
+they should be given a suffix on the form "-rev05" with an order that makes sense (for example the order in which the devices were released).
 
 Example of a good name with a part number prefix:
 `gbc/console/38884-button.A`
