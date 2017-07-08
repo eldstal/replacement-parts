@@ -83,3 +83,14 @@ information about the part. The following fields are mandatory:
 | class  | The class (see above) of the part. This is either `"original"`, `"adaptation"` or `"custom"`. | `"class" : "adaptation"` |
 | description | A free-text description of the part. If it is an adaptation, explain here. If there are any caveats, explain here. | `"description" : "Power button adapted for 3D-printing by hollowing out and adding struts."` |
 
+Example of a working `metadata.json`:
+```json
+{
+  "author" : "Nicki E. Santana",
+  "system" : "nes",
+  "fits" : [ "nes-001" ],
+  "license" : "wtfpl",
+  "class" : "original",
+  "description" : "Reset button"
+}
+```
