@@ -70,6 +70,9 @@ For example, if you have measured the outer diameter and the inner diameter of a
 the drawing. This allows others to easily compare their parts to your drawing by measuring the same lengths to determine
 whether to use the drawing or not.
 
+Try to use whichever units (inches or mm) make sense **for the part**. If the part appears to have been designed using inches,
+use that in your drawing as well. If done carefully, this reduces approximation errors.
+
 ## Metadata
 Every part is accompanied by a metadata.json file, which contains
 information about the part. The following fields are mandatory:
