@@ -20,7 +20,7 @@ The directory structure of the repository has a depth of 3:
 3. Part name (see *Naming* below)
 
 Each part's directory contains at least the `metadata.json` file and a `src/` directory
-with the CAD drawings in some portable format (Recommended: STEP)
+with the CAD drawings in some portable format (Recommended: FreeCAD .fcstd).
 
 Don't include the model exported to any non-editable format such as STL, there will eventually be automatic export
 from submitted drawing sources.
