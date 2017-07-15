@@ -2,7 +2,7 @@
   "author" : "eldstal",
   "system" : "psx",
   "class" : "custom",
-  "fits" : [ "scph-1200" ],
+  "fits" : [ "scph-1200", "scph-1180e" ],
   "license" : "cc-by-sa-4.0",
   "description" : "The Directional pad"
 }
