@@ -1,0 +1,8 @@
+{
+  "author" : "eldstal",
+  "system" : "psx",
+  "class" : "custom",
+  "fits" : [ "scph-1200" ],
+  "license" : "cc-by-sa-4.0",
+  "description" : "The smaller of the two left shoulder buttons"
+}
