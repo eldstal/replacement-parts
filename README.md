@@ -3,7 +3,7 @@ Open CAD library of replacement parts for game consoles
 
 The purpose of this project is to measure, model and archive the plastic and
 metal parts that make up old game consoles. These drawings can then be used to
-manufacture replacement parts (by CNC milling, 3D printing, molding, ...).
+manufacture replacement parts (by CNC milling, 3D printing, moulding, ...).
 
 In some cases, models of electronic parts (circuit boards, displays, ...) are also provided, as a tool
 for people designing custom cases. For these components, the focus is to locate mounting points (screw holes, etc)
@@ -33,7 +33,7 @@ Any part found in this repository falls into one of these three classes:
 
 Please keep in mind that there are many ways to manufacture the part, and that a faithful representation
 of the original is the best starting point. If a part does not exist in the library, please add the original
-first and then adapt it for specific users (e.g. molding).
+first and then adapt it for specific users (e.g. moulding).
 
 ## Naming
 The directory containing a part should be named in a descriptive and (if possible) short manner.
@@ -42,13 +42,13 @@ be added as a prefix. If multiple revisions of the same part exist (for differen
 they should be given a suffix on the form "-rev05" with an order that makes sense (for example the order in which the devices were released).
 
 Example of a good name with a part number prefix:
-`gbc/console/38884-button.A`
+`gbc/console/38884-A.button`
 
 If you adapt an existing original part, for example by making it suitable for 3D printing, use the same name and add a suffix that
 describes your adaptation.
 
 Example of a good adaptation name:
-`gbc/console/38884-button.A-3dp`
+`gbc/console/38884-A.button-3dp`
 
 ## Licensing
 Any parts you submit must either be your own work or work
