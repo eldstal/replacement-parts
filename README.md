@@ -20,16 +20,17 @@ The directory structure of the repository has a depth of 3:
 3. Part name (see *Naming* below)
 
 Each part's directory contains at least the `metadata.json` file and a `src/` directory
-with the CAD drawings in some portable format (Recommended: FreeCAD .fcstd).
+with the CAD drawings in some portable format (Recommended: OpenSCAD .scad).
 
 Don't include the model exported to any non-editable format such as STL, there will eventually be automatic export
 from submitted drawing sources.
 
 ## Classes
-Any part found in this repository falls into one of these three classes:
-* Faithful reproduction of the original
+Any part or drawing found in this repository falls into one of these four classes:
+* Faithful reproduction of a single original part
 * Adaptation (for example, changed to be 3D-printable)
 * Custom (For example, an alternate styling of a power button)
+* Assembly of other parts (For example, a complete NES controller)
 
 Please keep in mind that there are many ways to manufacture the part, and that a faithful representation
 of the original is the best starting point. If a part does not exist in the library, please add the original
@@ -83,7 +84,7 @@ information about the part. The following fields are mandatory:
 | system | The game system this part applies to | `"system" : "psx"` |
 | fits   | A list of specific model numbers of devices where this exact part is used. This could be a console main unit, a controller, an accessory, ... | `"fits" : [ "scph-1002", "scph-5000" ]` |
 | license | The license of the part, which specifies how it may be reused. | `"license" : "cc-by-sa-4.0"` |
-| class  | The class (see above) of the part. This is either `"original"`, `"adaptation"` or `"custom"`. | `"class" : "adaptation"` |
+| class  | The class (see above) of the part. This is either `"original"`, `"adaptation"`, `"custom"` or `"assembly"`. | `"class" : "adaptation"` |
 | description | A free-text description of the part. If it is an adaptation, explain here. If there are any caveats, explain here. | `"description" : "Power button adapted for 3D-printing by hollowing out and adding struts."` |
 
 Example of a working `metadata.json`:
