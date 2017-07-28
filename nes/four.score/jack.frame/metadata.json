@@ -1,0 +1,8 @@
+{
+  "author" : "eldstal",
+  "system" : "nes",
+  "class" : "original",
+  "fits" : [ "nese-034" ],
+  "license" : "cc-by-sa-4.0",
+  "description" : "The plastic frame that mounts the jacks to the front panel"
+}
