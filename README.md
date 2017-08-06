@@ -38,18 +38,17 @@ first and then adapt it for specific users (e.g. moulding).
 
 ## Naming
 The directory containing a part should be named in a descriptive and (if possible) short manner.
-If official manufacturer parts numbers are known (for example, from a service manual), these should
-be added as a prefix. If multiple revisions of the same part exist (for different releases of the same console, for example),
-they should be given a suffix on the form "-rev05" with an order that makes sense (for example the order in which the devices were released).
+If multiple revisions of the same part exist (for different releases of the same console, for example),
+they should be given a suffix on the form "-rev05" with an order that makes sense (for example the order in which the devices were released, or some well-known identifier for the console version).
 
-Example of a good name with a part number prefix:
-`gbc/console/38884-A.button`
+Example of a good name:
+`gbc/console/A.button`
 
 If you adapt an existing original part, for example by making it suitable for 3D printing, use the same name and add a suffix that
 describes your adaptation.
 
 Example of a good adaptation name:
-`gbc/console/38884-A.button-3dp`
+`gbc/console/A.button-3dp`
 
 ## Licensing
 Any parts you submit must either be your own work or work
@@ -76,12 +75,14 @@ use that in your drawing as well. If done carefully, this reduces approximation 
 
 ## Metadata
 Every part is accompanied by a metadata.json file, which contains
-information about the part. The following fields are mandatory:
+information about the part. The following fields are expected:
 
 | Field  | Description | Example |
 |-------:|:------------|:---------|
 | author | A name or alias for the person who contributed the original drawing. | `"author" : "jimmy_p"` |
-| system | The game system this part applies to | `"system" : "psx"` |
+| system | The game system this part applies to. Matches the directory structure. | `"system" : "psx"` |
+| device | The device which this part fits. Matches the directory strycture. | `"device" : "analog.controller"` |
+| partno | Optional field. If an official part number is known (from a service manual, for example), specify it here. | `"partno" : "ab-12345"` |
 | fits   | A list of specific model numbers of devices where this exact part is used. This could be a console main unit, a controller, an accessory, ... | `"fits" : [ "scph-1002", "scph-5000" ]` |
 | license | The license of the part, which specifies how it may be reused. | `"license" : "cc-by-sa-4.0"` |
 | class  | The class (see above) of the part. This is either `"original"`, `"adaptation"`, `"custom"` or `"assembly"`. | `"class" : "adaptation"` |
@@ -92,6 +93,7 @@ Example of a working `metadata.json`:
 {
   "author" : "Nicki E. Santana",
   "system" : "nes",
+  "device" : "four.score",
   "fits" : [ "nes-001" ],
   "license" : "wtfpl",
   "class" : "original",

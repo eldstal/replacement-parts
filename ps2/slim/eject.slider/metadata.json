@@ -1,6 +1,7 @@
 {
   "author" : "eldstal",
   "system" : "ps2",
+  "device" : "slim",
   "class" : "original",
   "fits" : [ "scph-90003" ],
   "license" : "cc-by-sa-4.0",
