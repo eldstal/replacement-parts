@@ -1,0 +1,9 @@
+{
+  "author" : "eldstal",
+  "system" : "nes",
+  "device" : "four.score",
+  "class" : "original",
+  "fits" : [ "nese-034" ],
+  "license" : "cc-by-sa-4.0",
+  "description" : "The front face of the unit's casing"
+}
