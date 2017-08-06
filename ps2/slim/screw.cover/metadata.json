@@ -1,0 +1,10 @@
+{
+  "author" : "eldstal",
+  "system" : "ps2",
+  "device" : "slim",
+  "partno" : "2-187-329-01",
+  "class" : "original",
+  "fits" : [ "scph-90003" ],
+  "license" : "cc-by-sa-4.0",
+  "description" : "The hard plastic cover for some of the case screws"
+}
