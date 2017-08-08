@@ -1,0 +1,9 @@
+{
+  "author" : "eldstal",
+  "system" : "ps2",
+  "device" : "slim",
+  "class" : "original",
+  "fits" : [ "scph-90003" ],
+  "license" : "cc-by-sa-4.0",
+  "description" : "The spring-loaded door in front of each memory card bay"
+}
