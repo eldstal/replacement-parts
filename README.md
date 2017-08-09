@@ -42,13 +42,13 @@ If multiple revisions of the same part exist (for different releases of the same
 they should be given a suffix on the form "-rev05" with an order that makes sense (for example the order in which the devices were released, or some well-known identifier for the console version).
 
 Example of a good name:
-`gbc/console/A.button`
+`gbc/console/A_button`
 
 If you adapt an existing original part, for example by making it suitable for 3D printing, use the same name and add a suffix that
 describes your adaptation.
 
 Example of a good adaptation name:
-`gbc/console/A.button-3dp`
+`gbc/console/A_button-3dp`
 
 ## Licensing
 Any parts you submit must either be your own work or work
